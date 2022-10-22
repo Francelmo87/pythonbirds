@@ -17,4 +17,8 @@ if __name__ == '__main__':
     print(francelmo.nome)                   # o nome que tava Francelmo passa a ter o Sousa do objeto
     print(francelmo.idade)                  # a idade la do método init é passado agora
     for filho in francisco.filhos:          # para cada filho(var) em objeto.parâmetro
-        print(filho.nome)                   #imprimir o filho(var).nome
+        print(filho.nome)                   # imprimir o filho(var).nome
+    francelmo.sobrenome = 'Sousa'           # para se criar atributo em tempo de execução(ou dinâmicamente) passando um novo atributo para o objeto
+    del francisco.filhos                    # para deletar os atributos dinamicamento se usa del objeto.atributo
+    print(francisco.__dict__)               # para visualizar todos os atributos de instância de um objeto __dict__
+    print(francelmo.__dict__)               # para visualizar todos os atributos de instância de um objeto __dict__
